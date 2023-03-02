@@ -1,0 +1,622 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100wh;
+    overflow-x: hidden;
+background: transparent;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo
+{
+    color: aliceblue;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+header ul
+{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+header ul li
+{
+list-style: none;
+margin-left: 20px;
+}
+header ul li a 
+{
+    text-decoration: none;
+    font-size: small;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+
+}
+header ul li a:hover, 
+header ul li a.active
+{
+    background: #fff;
+    color: #260f53;
+
+}
+
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+
+section img#mainimage
+{
+    mix-blend-mode: screen;
+}
+#text
+{
+    position: absolute;
+    
+    columns: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #2b1055
+
+}
+.sec h2
+{
+    font-size: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+}
+.sec p
+{
+    font-size: 1em;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+}
+#text{
+    padding-top: 15%;
+    color: #fff;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    padding-left: 40%;
+}
+.logo
+{
+    text-shadow: 2px 2px 2px black;
+    color: #fff;
+}
+section{
+    height: 50vh;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.introduction h1{
+    font-size: 100px;
+    text-align: center;
+}
+
+#text11{
+  padding-top: 15%;
+  color: #fff;
+  font-size: 60px;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  padding-left: 0%;
+}
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Exo:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,900&display=swap");
+.about {
+  padding: 2rem 0rem;
+}
+.upper,
+.lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#logo {
+  width: 70%;
+}
+.image {
+  background-image: url(https://cdn.dribbble.com/users/696579/screenshots/5415942/drib_test_2.gif);
+  background-size: cover;
+  width: 36rem;
+  height: 28rem;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+.camp {
+  position: relative;
+  top: 2.6rem;
+  left: 7.3rem;
+}
+#tent {
+  width: 30%;
+}
+#fire {
+  width: 15%;
+  position: relative;
+  top: 1rem;
+  right: 1rem;
+}
+.info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0rem 2rem;
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+.info:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+} 
+.info h1 {
+  font-family: "Exo", sans-serif;
+  font-size: 30px;
+  font-weight: black 200;
+  margin-bottom: 0rem;
+}
+.head1 {
+  text-decoration: white;
+}
+.info p {
+  font-family: "Exo 2", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.slider {
+  display: flex;
+  align-items: center;
+  padding-top: 3.5rem;
+}
+.slider img {
+  width: 36rem;
+  height: 28rem;
+  border-radius: 50%;
+}
+/* ------------------------------------ */
+@media (max-width: 768px) {
+  .upper {
+    flex-direction: column;
+    margin-bottom: 0rem;
+  }
+  #logo {
+    width: 50%;
+  }
+  .image {
+    width: 18rem;
+    height: 14rem;
+  }
+  .camp {
+    top: 1.2rem;
+    left: 3rem;
+  }
+  .info {
+    width: 85%;
+    padding: 0rem 1.7rem;
+  }
+  .info h1 {
+    font-size: 2rem;
+  }
+  .info p {
+    font-size: 1rem;
+  }
+  .slider {
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  .slider img {
+    width: 18rem;
+    height: 14rem;
+  }
+  .lower {
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+
+#contact-us {
+    margin: 50px 0;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  #contact-us h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  #contact-us p{
+    padding-left: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  #contact-form label,
+  #contact-form input,
+  #contact-form textarea,
+  #contact-form button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #contact-form label {
+    font-weight: bold;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #contact-form button:hover {
+    background-color: #3e8e41;
+  }
+  
+  #contact-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  
+
+
+
+
+
+  .footer{
+  
+    width: 100%;
+    padding: 100px 15%;
+    height: 50vh;
+    background: #333;
+    color: #efefef;
+    display: flex;
+   }
+   .footer div{
+    text-align: center;
+   }
+   .col-2{
+    flex-grow: 2;
+   }
+   .footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+   }
+   .col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+   }
+   form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+   }
+  
+   form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+   }
+  
+   .social-icons{
+    margin-top: 30px;
+   }
+   .social-icons i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+   }
+  
+
+
+  
+   
+
+   .mental-health {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #333333;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    color: #666666;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p, ul {
+    color: #666666;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+
+
+  .mental-causes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .mental-causes .cause {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .mental-causes .cause img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mental-causes h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .mental-causes p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  
+
+
+  .commonmentalhealth{
+    width: 80%;
+    height: 550px;
+    position: relative;
+    margin: 100px auto;
+    overflow: hidden;
+    padding-bottom: 50px;
+  }
+  .commonmentalhealthbutton{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+  }
+  .commonmentalhealthbutton button{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .commonmentalhealthbutton button:hover{
+    color: #ff7846;
+  }
+  .contentright img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  .commonmentalhealthcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    position: absolute;
+    transform: translateX(100%);
+    transition: 0.3s;
+  }
+  .contentleft{
+    flex-basis: 50%;
+  }
+  
+  .contentleft p{
+    font-size: 13px;
+    padding: 5px 0;
+  }
+  .contentleft a{
+    width: 150px;
+    display: block;
+    padding: 8px 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #ff7846;
+    color: #fff;
+    text-align: center;
+  }
+  .contentright{
+    flex-basis: 50%;
+    text-align: center;
+  }
+  
+#content1{
+  transform: translateX(0px);
+}
+#btn333{
+  color: #ff7846;
+}
+.contentleft ul{
+  list-style-type: none;
+}
+.contentleft ul li{
+    font-size: 13px;
+}
+
+
+  
+  
+
+div.tab-wrapper {
+	width: 60%;
+	margin: auto;
+}
+
+div.tab-button-wrapper ul {
+	padding: 0;
+	list-style: none;
+}
+
+div.tab-button-wrapper li {
+	float: left;
+}
+
+a.tab-button-first {
+	border-radius: 3px 0 0 0;
+	-webkit-border-radius: 3px 0 0 0;
+	-moz-border-radius: 3px 0 0 0;
+}
+
+a.tab-button-last {
+	border-radius: 0 3px 0 0;
+	-webkit-border-radius: 0 3px 0 0;
+	-moz-border-radius: 0 3px 0 0;
+	border-right: none;
+}
+
+div.tab-button-wrapper a {
+	display: block;
+	padding: 1em;
+	text-decoration: none;
+	color: #252525;
+	background-color: #FFFFFF;
+	border-right: 1px solid black;
+}
+
+a.tab-button-hidden {
+	opacity: 0.5;
+}
+
+div.tab-body {
+	padding: 1em;
+	clear: both;
+	background-color: #FFFFFF;
+	min-height: 85%;
+	border-radius: 0 3px 3px 3px;
+	-webkit-border-radius: 0 3px 3px 3px;
+	-moz-border-radius: 0 3px 3px 3px;
+}
+
+div.tab-body-hidden {
+	display: none;
+}
