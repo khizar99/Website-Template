@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>SaltHealth</title>
+</head>
+<body>
+    <header>
+
+        <a href="index.html" class="logo">Salt Health</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Understanding Mental Health.html">Understanding Mental Health</a></li>
+            <li><a href="#">Treatment and Support</a></li>
+            <li><a href="#">Self-Care and Coping</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="about.html">About Salt Health</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="banner.png" id="mainimage">
+        <h2 id="text11">Self-Assessment</h2>
+    </section>
+
+    <div class="container">
+      <h1>Self-Assessment</h1>
+      <p>Are you curious about your knowledge of mental health? Take our quiz to test your understanding of different mental health conditions.</p>
+      
+      <h2>About the Quiz</h2>
+      <p>The quiz contains questions related to ADHD, depression, and anxiety. You will be asked a series of multiple-choice questions and will have to select the correct answer from the given options.</p>
+      
+      <h2>Instructions</h2>
+      <p>To take the quiz, select one of the following options:</p>
+      
+      <div class="quiz-options">
+        <button onclick="showADHDQuiz()">ADHD Quiz</button>
+        <button onclick="showDepressionQuiz()">Depression Quiz</button>
+        <button onclick="showAnxietyQuiz()">Anxiety Quiz</button>
+      </div>
+
+
+    <section class="Anxiety-Quiz" style="display:none">
+      <h1>Anxiety Quiz</h1>
+      <form>
+        <fieldset>
+          <legend>Question 1:</legend>
+          <label>Do you often feel nervous or anxious?</label><br>
+          <input type="radio" name="q1" value="0">Not at all<br>
+          <input type="radio" name="q1" value="1">A little bit<br>
+          <input type="radio" name="q1" value="2">Moderately<br>
+          <input type="radio" name="q1" value="3">Very much<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Question 2:</legend>
+          <label>Do you have difficulty sleeping due to anxiety?</label><br>
+          <input type="radio" name="q2" value="0">Not at all<br>
+          <input type="radio" name="q2" value="1">A little bit<br>
+          <input type="radio" name="q2" value="2">Moderately<br>
+          <input type="radio" name="q2" value="3">Very much<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Question 3:</legend>
+          <label>Do you have trouble concentrating due to anxiety?</label><br>
+          <input type="radio" name="q3" value="0">Not at all<br>
+          <input type="radio" name="q3" value="1">A little bit<br>
+          <input type="radio" name="q3" value="2">Moderately<br>
+          <input type="radio" name="q3" value="3">Very much<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Question 4:</legend>
+          <label>Do you feel restless or easily agitated?</label><br>
+          <input type="radio" name="q4" value="0">Not at all<br>
+          <input type="radio" name="q4" value="1">A little bit<br>
+          <input type="radio" name="q4" value="2">Moderately<br>
+          <input type="radio" name="q4" value="3">Very much<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Question 5:</legend>
+          <label>Do you experience panic attacks?</label><br>
+          <input type="radio" name="q5" value="0">No, never<br>
+          <input type="radio" name="q5" value="1">Occasionally<br>
+          <input type="radio" name="q5" value="2">Moderately<br>
+          <input type="radio" name="q5" value="3">Frequently<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Question 6:</legend>
+          <label>Do you avoid situations that make you anxious?</label><br>
+          <input type="radio" name="q6" value="0">Never<br>
+          <input type="radio" name="q6" value="1">Occasionally<br>
+          <input type="radio" name="q6" value="2">Frequently<br>
+          <input type="radio" name="q6" value="3">Always<br>
+          </fieldset>
+          <br>
+          <fieldset>
+          <legend>Question 7:</legend>
+          <label>Do you experience physical symptoms of anxiety such as sweating, trembling or a racing heart?</label><br>
+          <input type="radio" name="q7" value="0">Not at all<br>
+          <input type="radio" name="q7" value="1">A little bit<br>
+          <input type="radio" name="q7" value="2">Moderately<br>
+          <input type="radio" name="q7" value="3">Very much<br>
+          </fieldset>
+          <br>
+          <fieldset>
+          <legend>Question 8:</legend>
+          <label>Do you worry excessively about everyday events or activities?</label><br>
+          <input type="radio" name="q8" value="0">Not at all<br>
+          <input type="radio" name="q8" value="1">A little bit<br>
+          <input type="radio" name="q8" value="2">Moderately<br>
+          <input type="radio" name="q8" value="3">Very much<br>
+          </fieldset>
+          <br>
+          <fieldset>
+          <legend>Question 9:</legend>
+          <label>Do you feel tense or irritable due to anxiety?</label><br>
+          <input type="radio" name="q9" value="0">Not at all<br>
+          <input type="radio" name="q9" value="1">A little bit<br>
+          <input type="radio" name="q9" value="2">Moderately<br>
+          <input type="radio" name="q9" value="3">Very much<br>
+          </fieldset>
+          <br>
+          <input type="button" value="Submit" onclick="calculateScore()">
+          
+          </form>
+          <p id="result"></p>
+      
+    </section>
+
+   
+    <section class="Depression-Quiz" style="display:none ;">
+      <h1>Depression Quiz</h1>
+      <form>
+        <fieldset>
+          <legend>Question 1:</legend>
+          <label>Do you feel sad or down most of the time?</label><br>
+          <input type="radio" name="q11" value="0">Not at all<br>
+          <input type="radio" name="q11" value="1">A little bit<br>
+          <input type="radio" name="q11" value="2">Moderately<br>
+          <input type="radio" name="q11" value="3">Very much<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Question 2:</legend>
+          <label>Have you lost interest in activities that you used to enjoy?</label><br>
+          <input type="radio" name="q12" value="0">Not at all<br>
+          <input type="radio" name="q12" value="1">A little bit<br>
+          <input type="radio" name="q12" value="2">Moderately<br>
+          <input type="radio" name="q12" value="3">Very much<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Question 3:</legend>
+          <label>Do you have trouble sleeping or sleep too much?</label><br>
+          <input type="radio" name="q13" value="0">Not at all<br>
+          <input type="radio" name="q13" value="1">A little bit<br>
+          <input type="radio" name="q13" value="2">Moderately<br>
+          <input type="radio" name="q13" value="3">Very much<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Question 4:</legend>
+          <label>Do you have a decreased or increased appetite?</label><br>
+          <input type="radio" name="q14" value="0">Not at all<br>
+          <input type="radio" name="q14" value="1">A little bit<br>
+          <input type="radio" name="q14" value="2">Moderately<br>
+          <input type="radio" name="q14" value="3">Very much<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Question 5:</legend>
+          <label>Do you feel tired or lack energy?</label><br>
+          <input type="radio" name="q15" value="0">Not at all<br>
+          <input type="radio" name="q15" value="1">A little bit<br>
+          <input type="radio" name="q15" value="2">Moderately<br>
+          <input type="radio" name="q15" value="3">Very much<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Question 6:</legend>
+          <label>Do you have feelings of worthlessness or guilt?</label><br>
+          <input type="radio" name="q16" value="0">Not at all<br>
+          <input type="radio" name="q16" value="1">A little bit<br>
+          <input type="radio" name="q16" value="2">Moderately<br>
+          <input type="radio" name="q16" value="3">Very much<br>
+        </fieldset>
+        <br>
+        <fieldset>
+        <legend>Question 7:</legend>
+          <label>Do you find it difficult to concentrate or make decisions?</label><br>
+          <input type="radio" name="q17" value="0">Not at all<br>
+          <input type="radio" name="q17" value="1">A little bit<br>
+          <input type="radio" name="q17" value="2">Moderately<br>
+          <input type="radio" name="q17" value="3">Very much<br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Question 8:</legend>
+          <label>Do you have trouble falling or staying asleep, or wake up feeling tired?</label><br>
+          <input type="radio" name="q18" value="0">Not at all<br>
+          <input type="radio" name="q18" value="1">A little bit<br>
+          <input type="radio" name="q18" value="2">Moderately<br>
+          <input type="radio" name="q18" value="3">Very much<br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Question 9:</legend>
+          <label>Do you feel tired or lacking in energy most days?</label><br>
+          <input type="radio" name="q19" value="0">Not at all<br>
+          <input type="radio" name="q19" value="1">A little bit<br>
+          <input type="radio" name="q19" value="2">Moderately<br>
+          <input type="radio" name="q19" value="3">Very much<br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Question 10:</legend>
+          <label>Do you feel like a burden to others or that you are alone in your struggles?</label><br>
+          <input type="radio" name="q20" value="0">Not at all<br>
+          <input type="radio" name="q20" value="1">A little bit<br>
+          <input type="radio" name="q20" value="2">Moderately<br>
+          <input type="radio" name="q20" value="3">Very much<br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Question 11:</legend>
+          <label>Do you feel more irritable, short-tempered, or easily frustrated than usual?</label><br>
+          <input type="radio" name="q21" value="0">Not at all<br>
+          <input type="radio" name="q21" value="1">A little bit<br>
+          <input type="radio" name="q21" value="2">Moderately<br>
+          <input type="radio" name="q21" value="3">Very much<br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Question 12:</legend>
+          <label>Have you had thoughts of death or suicide?</label><br>
+          <input type="radio" name="q22" value="0">Not at all<br>
+          <input type="radio" name="q22" value="1">A little bit<br>
+          <input type="radio" name="q22" value="2">Moderately<br>
+          <input type="radio" name="q22" value="3">Very much<br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Question 13:</legend>
+          <label>Have you been irritable or easily annoyed by others?</label><br>
+          <input type="radio" name="q23" value="0">Not at all<br>
+          <input type="radio" name="q23" value="1">A little bit<br>
+          <input type="radio" name="q23" value="2">Moderately<br>
+          <input type="radio" name="q23" value="3">Very much<br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Question 14:</legend>
+          <label>Do you experience physical symptoms such as headaches, stomachaches, or other pains without a clear cause?</label><br>
+          <input type="radio" name="q24" value="0">Not at all<br>
+          <input type="radio" name="q24" value="1">A little bit<br>
+          <input type="radio" name="q24" value="2">Moderately<br>
+          <input type="radio" name="q24" value="3">Very much<br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Question 15:</legend>
+          <label>Have you lost your sense of humor or ability to laugh?</label><br>
+          <input type="radio" name="q25" value="0">Not at all<br>
+          <input type="radio" name="q25" value="1">A little bit<br>
+          <input type="radio" name="q25" value="2">Moderately<br>
+          <input type="radio" name="q25" value="3">Very much<br>
+          </fieldset>
+          <br>
+          <input type="button" value="Submit" onclick="calculateScore1()">
+          
+          </form>
+          <p id="result1"></p>
+    </section>
+
+
+    <section class="ADHD-Quiz" style="display:none ;">
+      <h1>ADHD Quiz</h1>
+      <form>
+        <fieldset>
+          <legend>Question 1:</legend>
+          <label>Do you have trouble paying attention to details or making careless mistakes?</label><br>
+          <input type="radio" name="q30" value="0">Not at all<br>
+          <input type="radio" name="q30" value="1">A little bit<br>
+          <input type="radio" name="q30" value="2">Moderately<br>
+          <input type="radio" name="q30" value="3">Very much<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Question 2:</legend>
+          <label>Do you have difficulty sustaining your attention during tasks or activities?</label><br>
+          <input type="radio" name="q31" value="0">Not at all<br>
+          <input type="radio" name="q31" value="1">A little bit<br>
+          <input type="radio" name="q31" value="2">Moderately<br>
+          <input type="radio" name="q31" value="3">Very much<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Question 3:</legend>
+          <label>Do you struggle to follow through on instructions or finish tasks?</label><br>
+          <input type="radio" name="q32" value="0">Not at all<br>
+          <input type="radio" name="q32" value="1">A little bit<br>
+          <input type="radio" name="q32" value="2">Moderately<br>
+          <input type="radio" name="q32" value="3">Very much<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Question 4:</legend>
+          <label>Do you often have difficulty organizing tasks and activities?</label><br>
+          <input type="radio" name="q33" value="0">Not at all<br>
+          <input type="radio" name="q33" value="1">A little bit<br>
+          <input type="radio" name="q33" value="2">Moderately<br>
+          <input type="radio" name="q33" value="3">Very much<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Question 5:</legend>
+          <label>Do you avoid or dislike tasks that require sustained mental effort?</label><br>
+          <input type="radio" name="q34" value="0">No, never<br>
+          <input type="radio" name="q34" value="1">Occasionally<br>
+          <input type="radio" name="q34" value="2">Moderately<br>
+          <input type="radio" name="q34" value="3">Frequently<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Question 6:</legend>
+          <label>Do you frequently lose things necessary for tasks or activities?</label><br>
+          <input type="radio" name="q35" value="0">Never<br>
+          <input type="radio" name="q35" value="1">Occasionally<br>
+          <input type="radio" name="q35" value="2">Frequently<br>
+          <input type="radio" name="q35" value="3">Always<br>
+          </fieldset>
+          <br>
+          <fieldset>
+          <legend>Question 7:</legend>
+          <label>Do you forget daily activities (such as appointments or chores) or lose track of them?</label><br>
+          <input type="radio" name="q36" value="0">Not at all<br>
+          <input type="radio" name="q36" value="1">A little bit<br>
+          <input type="radio" name="q36" value="2">Moderately<br>
+          <input type="radio" name="q36" value="3">Very much<br>
+          </fieldset>
+          <br>
+          <fieldset>
+          <legend>Question 8:</legend>
+          <label>Do you often fidget, tap your hands or feet, or squirm in your seat?</label><br>
+          <input type="radio" name="q37" value="0">Not at all<br>
+          <input type="radio" name="q37" value="1">A little bit<br>
+          <input type="radio" name="q37" value="2">Moderately<br>
+          <input type="radio" name="q37" value="3">Very much<br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Question 9:</legend>
+            <label>Do you frequently daydream or have your mind wander during tasks or activities?</label><br>
+            <input type="radio" name="q44" value="0">Not at all<br>
+            <input type="radio" name="q44" value="1">A little bit<br>
+            <input type="radio" name="q44" value="2">Moderately<br>
+            <input type="radio" name="q44" value="3">Very much<br>
+            </fieldset>
+          <fieldset>
+          <legend>Question 10:</legend>
+          <label>Do you feel restless or have difficulty sitting still?</label><br>
+          <input type="radio" name="q38" value="0">Not at all<br>
+          <input type="radio" name="q38" value="1">A little bit<br>
+          <input type="radio" name="q38" value="2">Moderately<br>
+          <input type="radio" name="q38" value="3">Very much<br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Question 11:</legend>
+            <label>Do you have difficulty waiting your turn or standing in line?</label><br>
+            <input type="radio" name="q39" value="0">Not at all<br>
+            <input type="radio" name="q39" value="1">A little bit<br>
+            <input type="radio" name="q39" value="2">Moderately<br>
+            <input type="radio" name="q39" value="3">Very much<br>
+            </fieldset>
+            <br>
+            <fieldset>
+              <legend>Question 12:</legend>
+              <label>Do you often feel forgetful or absent-minded?</label><br>
+              <input type="radio" name="q40" value="0">Not at all<br>
+              <input type="radio" name="q40" value="1">A little bit<br>
+              <input type="radio" name="q40" value="2">Moderately<br>
+              <input type="radio" name="q40" value="3">Very much<br>
+              </fieldset>
+              <br>
+              <fieldset>
+                <legend>Question 13:</legend>
+                <label>Do you have difficulty starting or completing tasks that require planning or organization?</label><br>
+                <input type="radio" name="q41" value="0">Not at all<br>
+                <input type="radio" name="q41" value="1">A little bit<br>
+                <input type="radio" name="q41" value="2">Moderately<br>
+                <input type="radio" name="q41" value="3">Very much<br>
+                </fieldset>
+                <br>
+                <fieldset>
+                  <legend>Question 14:</legend>
+                  <label>Do you have difficulty with time management, such as being chronically late or procrastinating excessively?</label><br>
+                  <input type="radio" name="q42" value="0">Not at all<br>
+                  <input type="radio" name="q42" value="1">A little bit<br>
+                  <input type="radio" name="q42" value="2">Moderately<br>
+                  <input type="radio" name="q42" value="3">Very much<br>
+                  </fieldset>
+                  <br>
+                  <fieldset>
+                    <legend>Question 15:</legend>
+                    <label>Do you struggle with maintaining a regular sleep schedule or getting enough sleep at night?</label><br>
+                    <input type="radio" name="q43" value="0">Not at all<br>
+                    <input type="radio" name="q43" value="1">A little bit<br>
+                    <input type="radio" name="q43" value="2">Moderately<br>
+                    <input type="radio" name="q43" value="3">Very much<br>
+                    </fieldset>
+                    <br>
+
+
+          <input type="button" value="Submit" onclick="calculateScore2()">
+          
+          </form>
+          <p id="result2"></p>
+      
+    </section>
+
+
+        
+    
+      
+    
+      
+    
+
+    
+
+      
+
+
+
+    <section>
+    <div class="footer">
+      <div class="col-1">
+      <h3>Useful Links</h3>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+      <a href="#">Shop</a>
+      </div>
+
+      <div class="col-2">
+      <h3>NewsLetter</h3>
+      <form>
+        <input type="email" placeholder="Your Email Address" required>
+        <br>
+        <button type="submit">SUBSCRIBE NOW</button>
+      </form>
+      </div>
+
+      <div class="col-3">
+        <h3>Contact</h3>
+        <p>Huddersfield, West Yorkshire <br> United Kingdom  <br> Email us At : <br> U1975609@unimail.hud.ac.uk </p>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-behance"></i>
+        </div>
+        
+      </div>
+    </div>
+    </section>
+
+          
+   <script src="selfass.js"></script>
+</body>
+</html>
