@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <!-- Add your CSS file here -->
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 <body>
     <?php
@@ -30,16 +40,40 @@
     $stmt->execute();
     $stmt->bind_result($quiz_type, $score, $timestamp);
     ?>
+    <title>SaltHealth</title>
+</head>
+<body>
+    <header>
 
-    <h1>Welcome, <?php echo $_SESSION['username']; ?>!</h1>
-    <h2>Quizzes</h2>
-    <ul>
-        <li><a href="depression.html">Depression Quiz</a></li>
-        <li><a href="anxiety.html">Anxiety Quiz</a></li>
-        <li><a href="adhd.html">ADHD Quiz</a></li>
-    </ul>
+        <a href="index.html" class="logo">Salt Health</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Understanding Mental Health.html">Understanding Mental Health</a></li>
+            <li><a href="#">Treatment and Support</a></li>
+            <li><a href="Coping Strategies.html">Self-Care and Coping</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="about.html">About Salt Health</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="banner.png" id="mainimage">
+        <h2 id="text">User Dashboard</h2>
+    </section>
 
-    <h2>Your Quiz Results</h2>
+
+    <section class="quiz-section">
+  <h2>Quizzes</h2>
+  <p>Our quizzes are designed to help you better understand your mental health and identify any potential issues. We recommend taking the quiz in a quiet place where you can focus and answer the questions honestly.</p>
+  <div class="quiz-buttons">
+    <a href="depression.html" class="quiz-button">Depression Quiz</a>
+    <a href="anxiety.html" class="quiz-button">Anxiety Quiz</a>
+    <a href="adhd.html" class="quiz-button">ADHD Quiz</a>
+  </div>
+</section>
+
+
+<h2 style="text-align: center; padding-top: 20px; padding-bottom: 20px">Your Quiz Results</h2>
+
     <table>
         <thead>
             <tr>
@@ -66,6 +100,6 @@
             ?>
         </tbody>
     </table>
-    <a href="logout.php">Logout</a>
+    <a href="logout.php" class="logout-btn">Logout</a>
 </body>
 </html>

@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100wh;
+    overflow-x: hidden;
+background: transparent;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo
+{
+    color: aliceblue;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+header ul
+{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+header ul li
+{
+list-style: none;
+margin-left: 20px;
+}
+header ul li a 
+{
+    text-decoration: none;
+    font-size: small;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+
+}
+header ul li a:hover, 
+header ul li a.active
+{
+    background: #fff;
+    color: #260f53;
+
+}
+
+
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+
+section img#mainimage
+{
+    mix-blend-mode: screen;
+}
+#text
+{
+    position: absolute;
+    
+    columns: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #2b1055
+
+}
+.sec h2
+{
+    font-size: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+}
+.sec p
+{
+    font-size: 1em;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+}
+#text{
+    padding-top: 15%;
+    color: #fff;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    padding-left: 40%;
+}
+.logo
+{
+    text-shadow: 2px 2px 2px black;
+    color: #fff;
+}
+section{
+    height: 50vh;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.introduction h1{
+    font-size: 100px;
+    text-align: center;
+}
+
+#text11{
+  padding-top: 15%;
+  color: #fff;
+  font-size: 60px;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  padding-left: 0%;
+}

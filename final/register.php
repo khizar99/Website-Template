@@ -26,24 +26,38 @@ if (isset($_POST['register'])) {
     } else {
         $email_check->close();
 
-        // Hash the password
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        // Check if the username already exists
+        $username_check = $conn->prepare("SELECT username FROM users WHERE username=?");
+        $username_check->bind_param("s", $username);
+        $username_check->execute();
+        $username_check->store_result();
 
-        // Insert the user into the database
-        $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $username, $email, $hashed_password);
-        $result = $stmt->execute();
-
-        if ($result) {
-            $_SESSION['message'] = "Registration successful!";
-            $stmt->close();
-            $conn->close();
-            header("Location: login.php");
-            exit;
+        if ($username_check->num_rows > 0) {
+            $_SESSION['message'] = "Username is already taken. Please choose a different username.";
+            $_SESSION['username_taken'] = true;
+            $username_check->close();
         } else {
-            $_SESSION['message'] = "Error: " . $stmt->error;
-            $stmt->close();
-            $conn->close();
+            $username_check->close();
+
+            // Hash the password
+            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+            // Insert the user into the database
+            $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
+            $stmt->bind_param("sss", $username, $email, $hashed_password);
+            $result = $stmt->execute();
+
+            if ($result) {
+                $_SESSION['message'] = "Registration successful!";
+                $stmt->close();
+                $conn->close();
+                header("Location: login.php");
+                exit;
+            } else {
+                $_SESSION['message'] = "Error: " . $stmt->error;
+                $stmt->close();
+                $conn->close();
+            }
         }
     }
 }
@@ -55,7 +69,7 @@ if (isset($_POST['register'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="register.css">
+    <link rel="stylesheet" type="text/css" href="registration.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
@@ -81,31 +95,43 @@ if (isset($_POST['register'])) {
     </header>
     <section>
         <img src="banner.png" id="mainimage">
-        <h2 id="text">Dashboard</h2>
+        
     </section>
 
-    <h1>Register</h1>
 
 
-<?php if (isset($_SESSION['message'])): ?>
+    <div class="register-form">
+  <?php if (isset($_SESSION['message'])): ?>
     <div class="error-message">
-        <?php echo $_SESSION['message']; ?>
+      <?php echo $_SESSION['message']; ?>
     </div>
     <?php unset($_SESSION['message']); ?>
-<?php endif; ?>
+  <?php endif; ?>
+  
+  <?php if (isset($_SESSION['email_taken'])): ?>
+    <div class="error-message">
+      This email is already taken. Please choose another one.
+    </div>
+    <?php unset($_SESSION['email_taken']); ?>
+  <?php endif; ?>
 
-<form action="register.php" method="POST">
+  <h1 id="registerid">Register</h1>
+  <form action="register.php" method="POST">
     <label for="username">Username:</label>
     <input type="text" name="username" id="username" required>
-    <br>
+
     <label for="email">Email:</label>
     <input type="email" name="email" id="email" required>
-    <br>
+
     <label for="password">Password:</label>
     <input type="password" name="password" id="password" required>
-    <br>
+
     <button type="submit" name="register">Register</button>
-</form>  
+    <div class="alt">
+      <p>Already have an account? <a href="login.php">Log in</a></p>
+    </div>
+  </form>
+</div>
    
 </body>
 </html>

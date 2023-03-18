@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100wh;
+    overflow-x: hidden;
+background: transparent;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo
+{
+    color: aliceblue;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+header ul
+{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+header ul li
+{
+list-style: none;
+margin-left: 20px;
+}
+header ul li a 
+{
+    text-decoration: none;
+    font-size: small;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+
+}
+header ul li a:hover, 
+header ul li a.active
+{
+    background: #fff;
+    color: #260f53;
+
+}
+
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+
+section img#mainimage
+{
+    mix-blend-mode: screen;
+}
+#text
+{
+    position: absolute;
+    
+    columns: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #2b1055
+
+}
+.sec h2
+{
+    font-size: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+}
+.sec p
+{
+    font-size: 1em;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+}
+#text{
+    padding-top: 15%;
+    color: #fff;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    padding-left: 40%;
+}
+.logo
+{
+    text-shadow: 2px 2px 2px black;
+    color: #fff;
+}
+section{
+    height: 50vh;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.introduction h1{
+    font-size: 100px;
+    text-align: center;
+}
+
+#text11{
+  padding-top: 15%;
+  color: #fff;
+  font-size: 60px;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  padding-left: 0%;
+}
+
+
+#registerid{
+    text-align: center;
+    color: #260f53;
+    padding-top: 20px;
+    
+}
+#registerid1{
+    text-align: center;
+    color: #260f53;
+    padding-top: 20px;
+    background-color: #f1f1f1;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	background-color: #f1f1f1;
+}
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  form h2 {
+    margin-top: 0;
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  form label {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #573b8a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #6d44b8;
+  }
+  
+  .error-message {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #e60000;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .login-form-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .login-form-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .login-form-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .login-form-container input[type="email"],
+  .login-form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .login-form-container button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .login-form-container button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  
