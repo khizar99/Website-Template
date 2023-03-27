@@ -42,6 +42,8 @@ function openJS(){
 
 
 
+
+
 var last_tab = 1;
 
 function loadTab(tab_number)
@@ -58,12 +60,14 @@ function loadTab(tab_number)
 
 
 
+
 var typed = new Typed(".auto-type",{
   strings: ["through mindfulness and meditation","for a happier and healthier you","for a positive and empowered mindset","to reduce stress and anxiety"],
   typeSpeed: 100,
   backSpeed: 100,
   loop: true
 })
+
 
 
 

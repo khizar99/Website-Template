@@ -13,6 +13,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
+  <script src="https://kit.fontawesome.com/5c671e8c95.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>SaltHealth</title>
 </head>
 <body>
@@ -20,18 +25,44 @@
 
         <a href="index.html" class="logo">Salt Health</a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Understanding Mental Health.html">Understanding Mental Health</a></li>
-            <li><a href="#">Treatment and Support</a></li>
-            <li><a href="#">Self-Care and Coping</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="about.html">About Salt Health</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Understanding Mental Health.html">Understanding Mental Health</a></li>
+          <li><a href="Coping Strategies.html">Self-Care and Coping</a></li>
+          <li><a href="Resources.html">Resources</a></li>
+          <li><a href="about.html">About Salt Health</a></li>
+          <li><a href="login.php"><i class="fas fa-user"></i></a></li>
         </ul>
     </header>
     <section>
         <img src="banner.png" id="mainimage">
         <h2 id="text11">Resources</h2>
     </section>
+
+    <div class="chatbox-container">
+      <div class="chatbox">
+          <div class="chatbox__support">
+              <div class="chatbox__header">
+                  <div class="chatbox__image--header">
+                      <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                  </div>
+                  <div class="chatbox__content--header">
+                      <h4 class="chatbox__heading--header">Chat support</h4>
+                      <p class="chatbox__description--header">Hi. My name is Salt. How can I help you?</p>
+                  </div>
+              </div>
+              <div class="chatbox__messages">
+                  <div></div>
+              </div>
+              <div class="chatbox__footer">
+                  <input type="text" placeholder="Write a message...">
+                  <button class="chatbox__send--footer send__button">Send</button>
+              </div>
+          </div>
+          <div class="chatbox__button">
+              <button><img src="chatbox-icon.svg" /></button>
+          </div>
+      </div>
+  </div>
 
 
     
@@ -52,7 +83,7 @@
           <p>Call 1-866-488-7386 or text START to 678678 for LGBTQ+ youth support.</p>
         </div>
       </div>
-      <p>Additional crisis hotlines and resources are available <a href="#">here</a>.</p>
+      <p>Additional crisis hotlines and resources are available <a href="https://www.nhs.uk/nhs-services/mental-health-services/where-to-get-urgent-help-for-mental-health/" target="_blank">here</a>.</p>
     </section>
 
 
@@ -63,7 +94,7 @@
         </div>
         <h3 class="resource-title">Articles and Guides</h3>
         <p class="resource-description">Read helpful articles and guides on mental health, self-care, and more.</p>
-        <a href="#" class="resource-link">View Articles</a>
+        <a href="https://www.mentalhealth.org.uk/explore-mental-health/publications/our-best-mental-health-tips" class="resource-link" target="_blank">View Articles</a>
       </div>
     
       <div class="resource-item">
@@ -72,7 +103,7 @@
         </div>
         <h3 class="resource-title">Community Forums</h3>
         <p class="resource-description">Join a community of people who understand what you're going through.</p>
-        <a href="#" class="resource-link">Join Forums</a>
+        <a href="https://www.mentalhealthforum.net/" class="resource-link" target="_blank">Join Forums</a>
       </div>
     
       <div class="resource-item">
@@ -81,7 +112,7 @@
         </div>
         <h3 class="resource-title">Podcasts and Audio</h3>
         <p class="resource-description">Listen to podcasts and audio recordings on mental health, wellness, and more.</p>
-        <a href="#" class="resource-link">Listen Now</a>
+        <a href="https://www.audible.co.uk/?source_code=PS1PP30DTRIAL451113022000S&gclid=Cj0KCQjw2v-gBhC1ARIsAOQdKY1Co-cwQAa6N6YjrYTVChyLH2AVH6aVqNNha3lX0JNXWBGpnjZ4ra8aApmvEALw_wcB&gclsrc=aw.ds" class="resource-link" target="_blank">Listen Now</a>
       </div>
     </section>
     
@@ -92,19 +123,19 @@
         <i class="fas fa-dumbbell resource-icon"></i>
         <h3 class="resource-title">Workout Videos</h3>
         <p class="resource-description">Stay active with these workout videos designed to improve mental health.</p>
-        <a href="#" class="resource-link">View Videos</a>
+        <a href="https://www.fitnessblender.com/videos" class="resource-link" target="_blank">View Videos</a>
       </div>
       <div class="resource-item">
         <i class="fas fa-utensils resource-icon"></i>
         <h3 class="resource-title">Healthy Recipes</h3>
         <p class="resource-description">Find delicious and nutritious recipes that supports a well functioning and healthy brain.</p>
-        <a href="#" class="resource-link">View Recipes</a>
+        <a href="https://www.simplyrecipes.com/" class="resource-link" target="_blank">View Recipes</a>
       </div>
       <div class="resource-item">
         <i class="fas fa-walking resource-icon"></i>
         <h3 class="resource-title">Stress Management</h3>
         <p class="resource-description">Discover how physical activity can help you manage stress and improve your mental well-being.</p>
-        <a href="#" class="resource-link">View Tips</a>
+        <a href="https://www.helpguide.org/articles/stress/stress-management.htm" class="resource-link" target="_blank">View Tips</a>
       </div>
     </section>
     
@@ -117,10 +148,9 @@
     <div class="footer">
       <div class="col-1">
       <h3>Useful Links</h3>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-      <a href="#">Shop</a>
+      <a href="about.html">About</a>
+      <a href="index.html">Services</a>
+      <a href="about.html">Contact</a>
       </div>
 
       <div class="col-2">
@@ -148,5 +178,6 @@
 
           
    <script src="commonhealth.js"></script>
+   <script src="chatbot.js"></script>
 </body>
 </html>

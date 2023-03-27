@@ -68,12 +68,12 @@ if (isset($_POST['login'])) {
 
         <a href="index.html" class="logo">Salt Health</a>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class=>Home</a></li>
             <li><a href="Understanding Mental Health.html">Understanding Mental Health</a></li>
-            <li><a href="#">Treatment and Support</a></li>
             <li><a href="Coping Strategies.html">Self-Care and Coping</a></li>
-            <li><a href="#">Resources</a></li>
+            <li><a href="Resources.html">Resources</a></li>
             <li><a href="about.html">About Salt Health</a></li>
+            <li><a href="login.php"><i class="fas fa-user"></i></a></li>
         </ul>
     </header>
     <section>
